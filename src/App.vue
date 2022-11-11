@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-[#f5f5f5] w-full flex flex-col items-center">
+  <div
+    class="section bg-[url(/images/jumia_black/bg.png)] w-full flex flex-col items-center"
+  >
     <TopBanner />
     <HeaderTag />
     <div class="w-9/12 h-full">
@@ -31,3 +33,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.section {
+  background-position: 50% 120%;
+}
+</style>
