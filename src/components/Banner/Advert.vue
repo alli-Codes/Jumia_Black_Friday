@@ -1,9 +1,9 @@
 <template>
-    <!-- <div class="bg-green-400 w-full h-full">
+  <!-- <div class="bg-green-400 w-full h-full">
         
     </div> -->
 
-    <swiper
+  <swiper
     :slidesPerView="1"
     :spaceBetween="30"
     :effect="'fade'"
@@ -18,12 +18,25 @@
     :navigation="true"
     :modules="modules"
     class="mySwiper w-full h-full rounded"
-    >
-        <swiper-slide><img src="/images/img1.jpg" alt=""></swiper-slide>
-        <swiper-slide><img src="/images/img2.jpg" alt=""></swiper-slide>
-        <swiper-slide><img src="/images/img3.jpg" alt=""></swiper-slide>
-        <swiper-slide><img src="/images/img4.jpg" alt=""></swiper-slide>
-    </swiper>
+  >
+    <swiper-slide
+      ><img src="/images/jumia_black/img1.jpg" alt="" /></swiper-slide
+    ><swiper-slide
+      ><img src="/images/jumia_black/img2.jpg" alt="" /></swiper-slide
+    ><swiper-slide
+      ><img src="/images/jumia_black/img3.jpg" alt="" /></swiper-slide
+    ><swiper-slide
+      ><img src="/images/jumia_black/img4.gif" alt="" /></swiper-slide
+    ><swiper-slide
+      ><img src="/images/jumia_black/img5.png" alt="" /></swiper-slide
+    ><swiper-slide
+      ><img src="/images/jumia_black/img6.jpg" alt="" /></swiper-slide
+    ><swiper-slide
+      ><img src="/images/jumia_black/img7.jpg" alt="" /></swiper-slide
+    ><swiper-slide
+      ><img src="/images/jumia_black/img8.png" alt=""
+    /></swiper-slide>
+  </swiper>
 </template>
 
 <script>
@@ -35,15 +48,15 @@ import "swiper/css/navigation";
 import "./style.css";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper";
 export default {
-    name: 'AdvertItem',
-    components: {
-        Swiper,
-        SwiperSlide
-    },
-    setup() {
-        return {
-            modules: [Autoplay, EffectFade, Pagination, Navigation],
-        };
-    },
-}
+  name: "AdvertItem",
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Autoplay, EffectFade, Pagination, Navigation],
+    };
+  },
+};
 </script>
